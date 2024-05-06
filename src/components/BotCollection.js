@@ -7,7 +7,7 @@ function BotCollection({ addToArmy }) {
   // fetches bots from api
     const [bots, setBots] = useState([]);
   useEffect(() => {
-    fetch(" http://localhost:8002/bots")
+    fetch(" https://bot-battlr-1-k9tu.onrender.com/bots")
       .then((res) => res.json())
       .then((data) => setBots(data))
       .catch((err) => console.log(err));
